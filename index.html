@@ -1,0 +1,212 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Thank you for attending our open house</h1>
+    <p id="description" class="description text-center">
+      Please take a minute and tell us what you think
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >How much did you like our property?<span class="clue">(1-10)</span></label
+      >
+      <input
+        type="number"
+        name="Rating"
+        id="number"
+        min="1"
+        max="10"
+        class="form-control"
+        placeholder="Rating"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current real estate needs</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="Buyer">Want to buy soon</option>
+        <option value="Renter">Want to rent soon</option>
+        <option value="Investor">Looking for an investment property</option>
+        <option value="Not_Sure">Not sure at this point</option>
+        <option value="Contact_Me">Please contact me</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you be interested in seeing other units at this property?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Why did you choose to visit us to see our homes?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="lifestyle">The lifestyle we offer</option>
+        <option value="flexibility">The flexibility of housing</option>
+        <option value="school">The school district</option>
+        <option value="Price">The Price of our units</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="renovations"
+          type="checkbox"
+          class="input-checkbox"
+        />More luxurious renovations</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="games"
+          type="checkbox"
+          class="input-checkbox"
+        />More games in the common areas</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="lower-prices"
+          type="checkbox"
+          class="input-checkbox"
+        />Lower prices</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="rentals"
+          type="checkbox"
+          class="input-checkbox"
+        />More Rental options</label
+      >
+      <label
+        ><input
+          name="condos"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />More condo options</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Staff"
+          type="checkbox"
+          class="input-checkbox"
+        />Staff being present more often</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Meal-options"
+          type="checkbox"
+          class="input-checkbox"
+        />Onsite meal options</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Community"
+          type="checkbox"
+          class="input-checkbox"
+        />Community events</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="office"
+          type="checkbox"
+          class="input-checkbox"
+        />Office hours</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="parking"
+          type="checkbox"
+          class="input-checkbox"
+        />Parking</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Children-activities"
+          type="checkbox"
+          class="input-checkbox"
+        />Children's activities</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
